@@ -9,6 +9,7 @@
     "api/content.js": { "includeFiles": "public/{insights/**,404.html}" }
   },
   "redirects": [
+    { "source": "/", "has": [{ "type": "host", "value": "adm.capitalnutri.com.br" }], "destination": "/admin", "permanent": false },
     { "source": "/insights/artigo.html", "destination": "/insights/", "permanent": false }
   ],
   "rewrites": [

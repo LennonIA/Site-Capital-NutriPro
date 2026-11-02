@@ -22,6 +22,9 @@ module.exports = (req, res) => {
   const type = req.query.type;
   if (type === 'robots') {
     res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    // O subdomínio do painel (adm.) nunca deve ser indexado pelo Google.
+    const host = String(req.headers['x-forwarded-host'] || req.headers.host || '');
+    if (host.startsWith('adm.')) return res.status(200).send('User-agent: *\nDisallow: /\n');
     return res.status(200).send(core.robotsTxt(url));
   }
   const articles = JSON.parse(fs.readFileSync(path.join(DIR, 'articles.json'), 'utf8'));
