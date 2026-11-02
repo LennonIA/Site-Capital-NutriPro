@@ -3,9 +3,8 @@
   "version": "1.1.0",
   "private": true,
   "description": "Site institucional interativo da Capital Nutri — Soluções em alimentação",
-  "main": "local-server.js",
   "scripts": {
-    "start": "node local-server.js"
+    "local": "node local-server.js"
   },
   "engines": {
     "node": "22.x"
