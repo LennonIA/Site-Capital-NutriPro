@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "padaria-vende-bem-mas-lucra-pouco",
+    "titulo": "Por que sua padaria vende bem, mas pode lucrar pouco?",
+    "resumo": "Movimento no balcão não é sinônimo de lucro. Entenda onde a margem costuma se perder no dia a dia.",
+    "categoria": "Gestão e lucratividade",
+    "leitura": "5 min",
+    "data": "2026-10-28",
+    "imagem": "",
+    "revisado": false,
+    "publicado": true,
+    "conteudo": [
+      { "tipo": "p", "texto": "É comum encontrar padarias com balcão cheio e caixa apertado no fim do mês. Na maioria dos casos, o problema não está nas vendas, mas no que acontece antes delas: na produção, no estoque e na formação de preço." },
+      { "tipo": "h2", "texto": "Produzir mais não significa lucrar mais" },
+      { "tipo": "p", "texto": "Quando a produção é definida pelo hábito, e não pela demanda, as sobras viram descarte ou promoção. Em ambos os casos, matéria-prima, energia e horas de trabalho foram gastas sem retorno integral." },
+      { "tipo": "h2", "texto": "Preço sem ficha técnica é palpite" },
+      { "tipo": "p", "texto": "Sem conhecer o custo de cada receita, é difícil saber quais produtos realmente contribuem para o resultado. Alguns itens campeões de venda podem ter margens muito menores do que parecem." },
+      { "tipo": "h2", "texto": "Por onde começar" },
+      { "tipo": "lista", "itens": ["Registre as perdas diárias: produto, quantidade e motivo.", "Compare a produção com as vendas por dia da semana.", "Elabore fichas técnicas dos produtos mais vendidos.", "Revise preços com base no custo real."] },
+      { "tipo": "p", "texto": "Pequenos controles, mantidos com disciplina, costumam revelar oportunidades que passavam despercebidas." }
+    ]
+  },
+  {
+    "slug": "erros-que-aumentam-desperdicio-em-restaurantes",
+    "titulo": "Os erros que aumentam o desperdício em restaurantes",
+    "resumo": "Do recebimento ao prato: os pontos da operação onde o desperdício costuma nascer e como identificá-los.",
+    "categoria": "Produção inteligente",
+    "leitura": "6 min",
+    "data": "2026-10-28",
+    "imagem": "",
+    "revisado": false,
+    "publicado": true,
+    "conteudo": [
+      { "tipo": "p", "texto": "O desperdício em restaurantes raramente tem uma única causa. Ele se acumula em pequenas falhas ao longo de toda a cadeia da operação." },
+      { "tipo": "h2", "texto": "Onde o desperdício costuma aparecer" },
+      { "tipo": "lista", "itens": ["Compras sem relação com o cardápio e a demanda.", "Armazenamento sem organização por validade.", "Pré-preparo em excesso.", "Porcionamento sem padrão.", "Falta de registro das sobras e devoluções."] },
+      { "tipo": "h2", "texto": "Medir é o primeiro passo" },
+      { "tipo": "p", "texto": "Sem registro, o desperdício é invisível. Uma planilha simples de perdas, preenchida diariamente, já permite identificar os itens e os momentos mais críticos." },
+      { "tipo": "p", "texto": "A partir desses dados, é possível ajustar compras, padronizar porções e planejar a produção com mais segurança." }
+    ]
+  },
+  {
+    "slug": "planejamento-da-producao-em-padaria",
+    "titulo": "Como melhorar o planejamento da produção em uma padaria",
+    "resumo": "Um passo a passo prático para produzir de acordo com a demanda, reduzir sobras e evitar faltas.",
+    "categoria": "Produção inteligente",
+    "leitura": "5 min",
+    "data": "2026-10-28",
+    "imagem": "",
+    "revisado": false,
+    "publicado": true,
+    "conteudo": [
+      { "tipo": "p", "texto": "Planejar a produção é decidir, com antecedência e base em informação, o que produzir, quanto e em que momento do dia." },
+      { "tipo": "h2", "texto": "Use o histórico de vendas" },
+      { "tipo": "p", "texto": "Registre as vendas por produto e por dia da semana. Em poucas semanas, padrões ficam claros: dias de maior movimento, produtos sazonais e efeitos do clima." },
+      { "tipo": "h2", "texto": "Escalone as fornadas" },
+      { "tipo": "p", "texto": "Em vez de produzir tudo de uma vez, distribua a produção ao longo do dia. Isso mantém o produto fresco e permite ajustes conforme a demanda real." },
+      { "tipo": "h2", "texto": "Acompanhe e ajuste" },
+      { "tipo": "p", "texto": "Compare diariamente o produzido com o vendido e registre as sobras. O planejamento melhora a cada ciclo." }
+    ]
+  },
+  {
+    "slug": "boas-praticas-documentos-nao-substituem-processos",
+    "titulo": "Boas práticas: por que documentos não substituem processos?",
+    "resumo": "Manual na gaveta não garante segurança dos alimentos. O que faz diferença é a prática diária da equipe.",
+    "categoria": "Boas práticas e segurança dos alimentos",
+    "leitura": "4 min",
+    "data": "2026-10-28",
+    "imagem": "",
+    "revisado": false,
+    "publicado": true,
+    "conteudo": [
+      { "tipo": "p", "texto": "Documentos de boas práticas são importantes: registram como a operação deve funcionar. Mas eles só cumprem seu papel quando refletem o que realmente acontece na rotina." },
+      { "tipo": "h2", "texto": "O risco do documento desconectado" },
+      { "tipo": "p", "texto": "Quando o manual descreve um processo que a equipe não conhece ou não aplica, a empresa tem a falsa sensação de estar preparada. Na prática, os riscos continuam." },
+      { "tipo": "h2", "texto": "Como aproximar papel e prática" },
+      { "tipo": "lista", "itens": ["Elabore procedimentos a partir da rotina real.", "Treine a equipe e verifique a aplicação.", "Mantenha registros simples e efetivamente preenchidos.", "Revise os documentos quando os processos mudarem."] },
+      { "tipo": "p", "texto": "Os requisitos aplicáveis variam conforme a atividade e a localidade. Uma avaliação técnica ajuda a identificar o que se aplica ao seu estabelecimento." }
+    ]
+  }
+]

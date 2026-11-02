@@ -1,0 +1,13 @@
+{
+  "name": "capital-nutri-site",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Site institucional interativo da Capital Nutri — Soluções em alimentação",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

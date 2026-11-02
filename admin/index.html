@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Painel comercial · Capital Nutri</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body { background: var(--bg-soft); }
+    .adm-top { background: #fff; border-bottom: 1px solid var(--line); }
+    .adm-top .container { display: flex; align-items: center; gap: 16px; height: 64px; }
+    .adm-top img { height: 44px; }
+    .adm-filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 16px; align-items: end; }
+    .adm-filters .field { margin: 0; min-width: 170px; }
+    .adm-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+    .table-wrap { background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: var(--bg-soft); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); position: sticky; top: 0; }
+    tr:hover td { background: #FAFCFF; }
+    td small { color: var(--muted); display: block; }
+    .urg { font-weight: 700; font-size: .75rem; padding: .2em .6em; border-radius: 999px; }
+    .urg.alta { background: #FDECEA; color: #A8281D; } .urg.media { background: #FFF5DD; color: #8A5B00; } .urg.baixa { background: var(--green-50); color: var(--green-700); }
+    details summary { cursor: pointer; color: var(--blue-600); font-weight: 600; }
+    select.status { font: inherit; padding: .35em .5em; border-radius: 8px; border: 1px solid var(--line); }
+  </style>
+  <script src="/js/admin.js" defer></script>
+</head>
+<body>
+<header class="adm-top"><div class="container"><img src="/assets/img/logo-capital-nutri.jpg" alt="Capital Nutri"><strong>Painel comercial</strong><a class="btn btn-ghost btn-sm" style="margin-left:auto" href="/api/admin/leads.csv">Exportar CSV</a></div></header>
+<main class="container" style="padding-bottom:48px">
+  <div class="adm-filters">
+    <label class="field"><span>Buscar</span><input id="f-q" placeholder="Empresa, nome, cidade…"></label>
+    <label class="field"><span>Segmento</span><select id="f-seg"><option value="">Todos</option></select></label>
+    <label class="field"><span>Necessidade</span><select id="f-need"><option value="">Todas</option></select></label>
+    <label class="field"><span>Status</span><select id="f-status"><option value="">Todos</option></select></label>
+    <label class="field"><span>Urgência</span><select id="f-urg"><option value="">Todas</option><option value="alta">Alta</option><option value="media">Média</option><option value="baixa">Baixa</option></select></label>
+  </div>
+  <div class="adm-kpis" id="kpis"></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Protocolo / data</th><th>Empresa</th><th>Contato</th><th>Necessidades</th><th>Urgência</th><th>Origem</th><th>Status</th><th>Detalhes</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="8">Carregando…</td></tr></tbody>
+    </table>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted);margin-top:16px">Dados pessoais: acesso restrito à equipe autorizada. Exporte somente o necessário e não compartilhe as planilhas fora da empresa.</p>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Dados de clientes (nunca publicar)
+data/
+*.tmp
+
+# Segredos
+.env
+.env.*
+
+# Arquivos que não fazem parte do site
+*.pdf
+/Logo*.jp*g
+/AnunX/
+/.claude/
+.vercel
+node_modules/
