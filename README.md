@@ -13,7 +13,7 @@ lib/core.js            Validação, classificação de leads, SEO (compartilhado
 lib/supabase.js        Acesso à tabela de leads no Supabase
 supabase.sql           Script que cria a tabela de leads com segurança (RLS)
 admin/index.html       Página do painel (fora de public/: só sai após login)
-server.js              Servidor LOCAL de testes (grava em data/leads.json)
+local-server.js              Servidor LOCAL de testes (grava em data/leads.json)
 public/
   index.html           Página principal (todas as seções)
   css/styles.css       Identidade visual, animações, responsivo
@@ -39,7 +39,7 @@ dev-server.ps1         Visualização estática no Windows sem Node (sem formul�
 3. Em **Project Settings → API**, anote o **Project URL** e a chave **service_role** (secreta).
 
 **2. GitHub (código)**
-Envie para o repositório somente: `api/`, `lib/`, `admin/`, `public/`, `vercel.json`, `package.json`, `server.js`, `supabase.sql`, `README.md`, `.gitignore`.
+Envie para o repositório somente: `api/`, `lib/`, `admin/`, `public/`, `vercel.json`, `package.json`, `local-server.js`, `supabase.sql`, `README.md`, `.gitignore`.
 Não envie: `data/`, PDFs, logos soltos na raiz, nem outras pastas de outros projetos.
 Pelo site do GitHub: *Add file → Upload files*, arraste os itens acima e clique em *Commit changes*.
 
@@ -64,7 +64,7 @@ A cada novo envio de arquivos ao GitHub, a Vercel publica a atualização automa
 ## Rodar localmente
 
 ```bash
-node server.js
+node local-server.js
 ```
 
 Acesse `http://localhost:3000`. Variáveis de ambiente:
@@ -93,7 +93,7 @@ Também:
 - **Artigos:** revise `public/insights/articles.json` com a equipe técnica; marque `"revisado": true` para remover o aviso de rascunho. Para publicar novos artigos, adicione um objeto ao arquivo (slug, título, resumo, categoria, leitura, data, conteúdo).
 - **Política de privacidade:** preencha os campos entre colchetes e revise com apoio jurídico.
 - **HTTPS:** publique atrás de um proxy/hospedagem com certificado (Render, Railway, Fly.io, VPS com Nginx + Let's Encrypt etc.).
-- **Persistência:** `data/leads.json` precisa de disco persistente na hospedagem. Para volume maior, troque `readJSONFile/writeJSONFile` em `server.js` por um banco (PostgreSQL, Supabase etc.).
+- **Persistência:** `data/leads.json` precisa de disco persistente na hospedagem. Para volume maior, troque `readJSONFile/writeJSONFile` em `local-server.js` por um banco (PostgreSQL, Supabase etc.).
 
 ## Funcionalidades e onde estão
 
@@ -114,4 +114,4 @@ Também:
 
 ## Testes realizados
 
-Verificado no navegador (desktop e celular) via servidor estático: navegação, menu, diagnóstico completo, simulador, jogo completo, triagem (etapas, validação, voltar) e tratamento de erro do envio. **O `server.js` não pôde ser executado nesta máquina (sem Node.js)** — rode `node server.js` e faça um envio de teste antes de publicar.
+Verificado no navegador (desktop e celular) via servidor estático: navegação, menu, diagnóstico completo, simulador, jogo completo, triagem (etapas, validação, voltar) e tratamento de erro do envio. **O `local-server.js` não pôde ser executado nesta máquina (sem Node.js)** — rode `node local-server.js` e faça um envio de teste antes de publicar.
