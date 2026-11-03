@@ -13,7 +13,9 @@ window.CN_CONFIG = {
     instagram: 'https://www.instagram.com/capitalnutri.consultoria/', // URL completa do perfil
     endereco: '',
     cnpj: '31.040.851/0001-91',
-    razaoSocial: '', // deixado em branco de propósito durante a transição do nome da empresa
+    // Nome registrado na Receita. Aparece só em letra pequena (rodapé e política de privacidade);
+    // a marca exibida no site é sempre "Capital Nutri".
+    razaoSocial: 'Nutripro Gestao em Alimentos LTDA',
   },
 
   // Exibe faixas "conteúdo de demonstração / a configurar" para a equipe revisar.

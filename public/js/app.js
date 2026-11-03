@@ -1089,7 +1089,12 @@
     dc.hidden = false;
   }
   $('#year').textContent = new Date().getFullYear();
-  if (EMP.razaoSocial || EMP.cnpj) $('#footer-legal').textContent = ` · ${[EMP.razaoSocial, EMP.cnpj && `CNPJ ${EMP.cnpj}`].filter(Boolean).join(' · ')}`;
+  if (EMP.cnpj) $('#footer-legal').textContent = ` · CNPJ ${EMP.cnpj}`;
+  if (EMP.razaoSocial) {
+    const fr = $('#footer-razao');
+    fr.textContent = `Razão social: ${EMP.razaoSocial}`;
+    fr.hidden = false;
+  }
 
   /* ======================= Partículas do topo (moedas, pães, escudos, gráficos) ======================= */
   if (!reduced) {
