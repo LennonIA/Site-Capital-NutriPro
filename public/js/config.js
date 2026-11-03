@@ -43,6 +43,10 @@ window.CN_CONFIG = {
     fotos: [
       // { src: '/assets/img/visita-tecnica-1.jpg', alt: 'Visita técnica em padaria' },
     ],
+    // Cartões da equipe na seção "A empresa". Sem nome/cargo, mostra "Equipe Capital Nutri".
+    equipe: [
+      { foto: '/assets/img/equipe-1.jpg', alt: 'Retrato profissional de integrante da equipe', nome: '', cargo: '' },
+    ],
   },
 
   /* Diagnóstico: pontuação transparente e configurável.

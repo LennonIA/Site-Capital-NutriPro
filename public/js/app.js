@@ -230,7 +230,6 @@
     $$('.photo-frame[data-photo]', root).forEach((f) => {
       const img = new Image();
       img.alt = f.dataset.alt || '';
-      img.loading = 'lazy';
       img.decoding = 'async';
       img.onload = () => { f.classList.add('has-photo'); f.prepend(img); };
       img.src = f.dataset.photo;
@@ -869,6 +868,9 @@
     const box = $('#cred-testimonials');
     box.hidden = false;
     box.innerHTML = deps.map((d) => `<figure class="testimonial reveal"><blockquote>“${esc(d.texto)}”</blockquote><figcaption><strong>${esc(d.nome)}</strong>${d.cargo ? ` · ${esc(d.cargo)}` : ''}${d.empresa ? `, ${esc(d.empresa)}` : ''}</figcaption></figure>`).join('');
+  }
+  if (cred.equipe && cred.equipe.length) {
+    $('#team').innerHTML = cred.equipe.map((p) => `<figure class="team-card reveal"><div class="photo-frame" data-photo="${esc(p.foto)}" data-alt="${esc(p.alt || 'Retrato profissional')}"><div class="photo-fallback">${icon('user')}</div></div><figcaption><strong>${esc(p.nome || 'Equipe Capital Nutri')}</strong><span>${esc(p.cargo || 'Soluções em alimentação')}</span></figcaption></figure>`).join('');
   }
   if (cred.fotos && cred.fotos.length) {
     $('#photo-mosaic').innerHTML = cred.fotos.slice(0, 3).map((f) => `<div class="photo-frame" data-photo="${esc(f.src)}" data-alt="${esc(f.alt)}"><div class="photo-fallback">${icon('camera')}</div></div>`).join('');
