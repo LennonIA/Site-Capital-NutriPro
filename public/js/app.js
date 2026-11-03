@@ -1079,6 +1079,15 @@
   if (EMP.endereco) items.push(`<span>${esc(EMP.endereco)}</span>`);
   if (!items.length && CFG.mostrarAvisosDeDemonstracao) items.push('<span class="pending">WhatsApp, e-mail e Instagram: a configurar</span>');
   fc.innerHTML = items.join('');
+  // Canais diretos na página de contato (só os que estiverem configurados).
+  const direct = [];
+  if (EMP.whatsapp) direct.push(`<a href="#" data-whatsapp data-origin="Contato">${icon('chat')} WhatsApp</a>`);
+  if (EMP.email) direct.push(`<a href="mailto:${esc(EMP.email)}">${icon('mail')} ${esc(EMP.email)}</a>`);
+  if (direct.length) {
+    const dc = $('#direct-contact');
+    dc.innerHTML = `<strong>Prefere falar direto?</strong>${direct.join('')}`;
+    dc.hidden = false;
+  }
   $('#year').textContent = new Date().getFullYear();
   if (EMP.razaoSocial || EMP.cnpj) $('#footer-legal').textContent = ` · ${[EMP.razaoSocial, EMP.cnpj && `CNPJ ${EMP.cnpj}`].filter(Boolean).join(' · ')}`;
 

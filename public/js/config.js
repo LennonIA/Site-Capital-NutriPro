@@ -9,7 +9,7 @@ window.CN_CONFIG = {
     assinatura: 'Soluções em alimentação',
     // WhatsApp comercial: só dígitos, com DDI 55 + DDD. Ex.: '5561999999999'
     whatsapp: '5561998634119',
-    email: '',
+    email: 'contato@nutripro.com.br',
     instagram: 'https://www.instagram.com/capitalnutri.consultoria/', // URL completa do perfil
     endereco: '',
     cnpj: '31.040.851/0001-91',

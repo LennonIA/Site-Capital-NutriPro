@@ -456,6 +456,10 @@ input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 
 .context-box { background: var(--blue-50); border: 1px solid #D3E1FB; border-radius: 16px; padding: 16px 18px; font-size: .88rem; color: var(--blue-800); }
 .context-box strong { display: block; margin-bottom: 4px; }
 .context-box button { margin-top: 8px; }
+.direct-contact { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(197, 211, 239, .22); font-size: .92rem; }
+.direct-contact strong { display: block; color: var(--ink); margin-bottom: 8px; }
+.direct-contact a { display: flex; align-items: center; gap: 8px; padding: 4px 0; color: var(--text); text-decoration: none; overflow-wrap: anywhere; }
+.direct-contact a:hover { color: var(--ink); text-decoration: underline; }
 .triage { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: clamp(22px, 4vw, 38px); box-shadow: var(--shadow-lg); position: relative; }
 .triage-progress { height: 8px; background: var(--bg-soft); border-radius: 999px; overflow: hidden; }
 .triage-progress span { display: block; height: 100%; width: 25%; background: var(--grad); border-radius: inherit; transition: width .5s var(--ease); }
