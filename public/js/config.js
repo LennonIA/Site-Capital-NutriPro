@@ -45,7 +45,7 @@ window.CN_CONFIG = {
     ],
     // Cartões da equipe na seção "A empresa". Sem nome/cargo, mostra "Equipe Capital Nutri".
     equipe: [
-      { foto: '/assets/img/equipe-1.jpg', alt: 'Retrato profissional de integrante da equipe', nome: '', cargo: '' },
+      { foto: '/assets/img/equipe-1.jpg', alt: 'Retrato profissional de integrante da gestão da Capital Nutri', nome: 'Fundadores e gestores', cargo: 'Capital Nutri · Soluções em alimentação' },
     ],
   },
 
