@@ -20,7 +20,7 @@ window.CN_CONFIG = {
 
   // Exibe faixas "conteúdo de demonstração / a configurar" para a equipe revisar.
   // Altere para false somente quando todo o conteúdo oficial estiver inserido.
-  mostrarAvisosDeDemonstracao: true,
+  mostrarAvisosDeDemonstracao: false,
 
   api: { leads: '/api/leads', artigos: '/api/articles' },
 
